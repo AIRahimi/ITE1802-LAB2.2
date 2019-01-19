@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.InputFilter;
 import android.view.Display;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
         display = findViewById(R.id.tvDisplay);
+
+        int maxDigits = 22;
+        display.setFilters(new InputFilter[] {new InputFilter.LengthFilter(maxDigits)});
         engine = new DoubleEvaluator();
     }
 
@@ -125,13 +129,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.buttonSum:
                 if (!Character.isDigit(display.getText().charAt(display.length()-1)))
                     display.getText().replace(display.length() - 1, display.length(), "");
-
                 double sum = engine.evaluate(display.getText().toString());
-                if ((sum % 1 == 0)) {
-                    display.setText(Integer.toString((int) sum));
-                } else {
                     display.setText(Double.toString(sum));
-                }
                 break;
             //Helpers
             case R.id.buttonClear:
@@ -184,12 +183,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_quit:
                 this.finish();
                 return true;
-
             default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
                 return super.onOptionsItemSelected(item);
-
         }
     }
 }
