@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MinKalkulator</string>
+    <string name="btnHelp">Hjelp</string>
+    <string name="btnQuit">Avslutt</string>
+    <string name="action_advanced">Avansert</string>
+    <string name="action_unit">Enhet</string>
+    <string name="action_normal">Normal</string>
+</resources>

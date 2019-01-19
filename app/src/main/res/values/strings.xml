@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyCalculator</string>
+    <string name="btnOne" translatable="false">1</string>
+    <string name="btnTwo" translatable="false">2</string>
+    <string name="btnThree" translatable="false">3</string>
+    <string name="btnFour" translatable="false">4</string>
+    <string name="btnFive" translatable="false">5</string>
+    <string name="btnSix" translatable="false">6</string>
+    <string name="btnSeven" translatable="false">7</string>
+    <string name="btnEight" translatable="false">8</string>
+    <string name="btnNine" translatable="false">9</string>
+    <string name="btnZero" translatable="false">0</string>
+    <string name="btnAddition" translatable="false">+</string>
+    <string name="btnSubtraction" translatable="false">-</string>
+    <string name="btnDivide" translatable="false">/</string>
+    <string name="btnMultiplicate" translatable="false">*</string>
+    <string name="btnSum" translatable="false">=</string>
+    <string name="btnClear" translatable="false">C</string>
+    <string name="btnHelp">Help</string>
+    <string name="btnQuit">Quit</string>
+    <string name="action_advanced">Advanced</string>
+    <string name="action_unit">Unit</string>
+    <string name="action_normal">Normal</string>
+
+</resources>
